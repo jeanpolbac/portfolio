@@ -17,22 +17,27 @@ body {
     flex-direction: column;
     align-items: space-between;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     color: DarkSlateBlue;
-    height: 100vh;
+    height: 95vh;
 
 }
 
 main {
     margin: center;
-    border: 1px solid;
-    height: 1000px;
+    /* border: 1px solid; */
+    align-content: center;
 }
 
+contact {
+    margin-top: 200px;
+
+}
 social {
-    border: 1px solid red;
-    
+    /* border: 1px solid red; */
+    margin-top: 0px;
+    justify-content: space-around;
 }
 
 h1 {
