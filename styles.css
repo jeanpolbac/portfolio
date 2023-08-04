@@ -44,13 +44,12 @@ main {
 
 /* Animation borrowed from https://codepen.io/kpdushanmaduka/pen/jadeoO. Found it by looking for transform and animation over hover.*/
 i {
-    letter-spacing: 25px;
-    font-size: 49px;
+    letter-spacing: 45px;
     transition: all .4s ease-in-out;
   }
 
 i:hover {
-    transform: scale(1.5);
+    transform: rotate(20deg) scale(1.2);
   }
   
 h1 {
