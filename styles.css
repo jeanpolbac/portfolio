@@ -4,7 +4,7 @@ html {
     font-size: 100%;
     padding: 0;
     margin: 0 auto;
-    background-color: white;
+    background-color: dimgray
 }
 
 /* Body Section */
@@ -18,7 +18,7 @@ body {
     align-content: center;
     justify-content: center;
     text-align: center;
-    color: DarkSlateBlue;
+    color: lavender;
     height: 95vh;
 
 }
@@ -27,33 +27,45 @@ main {
     align-content: center;
 }
 
+#me {
+	height: 200px;
+	border-radius: 15%;
+}
+
 .contact-me {
     margin-top: 200px;
 }
 
-
 .social{
-    /* border: 1px solid red;
-    margin-top: 0px; */
-    justify-content: space-around;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    justify-content: space-around ;
 }
 
+/* Animation borrowed from https://codepen.io/kpdushanmaduka/pen/jadeoO. Found it by looking for transform and animation over hover.*/
+i {
+    letter-spacing: 25px;
+    font-size: 49px;
+    transition: all .4s ease-in-out;
+  }
+
+i:hover {
+    transform: scale(1.5);
+  }
+  
 h1 {
 	font-size: 3rem;
 	font-weight: normal;
-    /* margin-top: 90px; */
 }
 
 h2 {
 	font-size: 2rem;
 	font-weight: bold;
-    /* margin-top: -30px; */
 }
 
 h3 {
     font-size: 2rem;
 	font-weight: bold;
-	/* margin-top: 60px */
 }
 
 h4 {
@@ -65,44 +77,22 @@ p {
 	font-size: 1rem;
 }
 
-/* a.social {
+/* Disable for now while testing */
 
-    align-self: flex-end;
-} */
-/*About Section*/
-
-
-/* Contact Me Section */
-
-/* .contact-me {
-	height: 150px;
-	padding-top: 30px;
-	padding-bottom: 60px;
-    margin-bottom: 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-   
-	
-} */
-
-.contact-headline {
-	/* margin-top: 20px; */
+/* .contact-headline {
     font-size: large;
 }
 
-.contact-link {
+contact-link {
 	font-weight: bold;
 	text-align: center;
     color: inherit;
     text-decoration: none;
     font-size: small;
-
 }
 
 .contact-phone {
 	font-weight: bold;
 	text-align: center;
     font-size: small;
-}
+} */
