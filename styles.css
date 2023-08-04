@@ -33,13 +33,14 @@ main {
 }
 
 .contact-me {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .social{
     /* border: 1px solid red; */
-    margin-top: 10px;
+    /* margin-top: 5px; */
     justify-content: space-around ;
+    align-content: center;
 }
 
 /* Animation code borrowed from https://codepen.io/kpdushanmaduka/pen/jadeoO.
