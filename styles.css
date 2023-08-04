@@ -42,10 +42,13 @@ main {
     justify-content: space-around ;
 }
 
-/* Animation borrowed from https://codepen.io/kpdushanmaduka/pen/jadeoO. Found it by looking for transform and animation over hover.*/
+/* Animation code borrowed from https://codepen.io/kpdushanmaduka/pen/jadeoO.
+ Found it by looking for transform and animation over hover. Further modified it after
+reading about the property in W3Schools.
+ */
 i {
-    letter-spacing: 45px;
-    transition: all .4s ease-in-out;
+    letter-spacing: 50px;
+    transition: all .5s ease-out;
   }
 
 i:hover {
