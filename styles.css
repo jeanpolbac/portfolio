@@ -1,13 +1,21 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400,700');
 
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply font to the entire document */
 html {
     font-size: 100%;
-    padding: 0;
-    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
     background-color: dimgray
 }
 
-/* Body Section */
+/* Simplify body styles */
 body {
     font-family: 'Raleway' , sans-serif;
     padding-right: 0;
@@ -36,19 +44,51 @@ main {
     margin-top: 150px;
 }
 
-.social{
-    /* border: 1px solid red; */
-    /* margin-top: 5px; */
-    justify-content: space-around ;
-    align-content: center;
+/* Add spacing between social icons */
+.social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+/* Style headings */
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+/* Apply consistent font size for paragraphs */
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Animation code borrowed from https://codepen.io/kpdushanmaduka/pen/jadeoO.
  Found it by looking for transform and animation over hover. Further modified it after
 reading about the property in W3Schools.
  */
-i {
-    letter-spacing: 50px;
+ i {
+    letter-spacing: 30px;
     transition: all .5s ease-out;
   }
 
@@ -56,29 +96,6 @@ i:hover {
     transform: rotate(20deg) scale(1.2);
   }
   
-h1 {
-	font-size: 3rem;
-	font-weight: normal;
-}
-
-h2 {
-	font-size: 2rem;
-	font-weight: bold;
-}
-
-h3 {
-    font-size: 2rem;
-	font-weight: bold;
-}
-
-h4 {
-	font-size: 1.5rem;
-	font-weight: normal;
-}
-
-p {
-	font-size: 1rem;
-}
 
 /* Disable for now while testing */
 
