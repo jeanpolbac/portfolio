@@ -1,118 +1,138 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,700');
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,400,700");
 
 /* Reset default margin and padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Apply font to the entire document */
+/* Base Styles */
 html {
-    font-size: 100%;
-    font-family: 'Raleway', sans-serif;
-    background-color: dimgray
+  font-size: 100%;
+  font-family: "Raleway", sans-serif;
+  background-color: dimgray;
 }
 
-/* Simplify body styles */
 body {
-    font-family: 'Raleway' , sans-serif;
-    padding-right: 0;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    color: lavender;
-    height: 95vh;
-
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: lavender;
+  min-height: 100vh;
 }
 
+/* Header and Navigation Bar */
+/* Navbar Styling */
+.navbar {
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Stick it to the top */
+  left: 0; /* Stick it to the left */
+  width: 100%; /* Make it full width */
+  background-color: dimgray;
+  color: white;
+  padding: 10px 20px; /* Add padding as needed */
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+.navbar-custom {
+  background-color: dimgray;
+}
+.nav-collapse .li{
+  list-style-type: none;
+}
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+}
+.navbar a:hover,
+.navbar a:active {
+  color: inherit;
+}
+
+/* Main Content */
 main {
-    align-content: center;
+  align-content: center;
 }
 
+/* About Me Image */
 #me {
-	height: 200px;
-	border-radius: 15%;
+  width: 140px;
+  height: auto;
+  border-radius: 15%;
 }
 
+/* Contact Me */
 .contact-me {
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
-/* Add spacing between social icons */
+.contact-me-footer,
+.contact-email {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Social Icons */
 .social {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.social a {
+  margin: 0;
+}
+.social a i {
+  font-size: 0.5 rem;
+}
+.icons-fixed-bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
-
-/* Style headings */
+/* Headings */
 h1 {
-    font-size: 3rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
+  font-size: 2.2rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
 }
-
 h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
-
 h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
-
 h4 {
-    font-size: 1.5rem;
-    font-weight: normal;
-    margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
 }
 
-/* Apply consistent font size for paragraphs */
+/* Paragraphs */
 p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-/* Animation code borrowed from https://codepen.io/kpdushanmaduka/pen/jadeoO.
- Found it by looking for transform and animation over hover. Further modified it after
-reading about the property in W3Schools.
- */
- i {
-    letter-spacing: 30px;
-    transition: all .5s ease-out;
-  }
-
+/* Animation */
+i {
+  letter-spacing: 30px;
+  transition: all 0.5s ease-out;
+}
 i:hover {
-    transform: rotate(20deg) scale(1.2);
-  }
-  
-
-/* Disable for now while testing */
-
-/* .contact-headline {
-    font-size: large;
+  transform: rotate(20deg) scale(1.2);
 }
-
-contact-link {
-	font-weight: bold;
-	text-align: center;
-    color: inherit;
-    text-decoration: none;
-    font-size: small;
-}
-
-.contact-phone {
-	font-weight: bold;
-	text-align: center;
-    font-size: small;
-} */
