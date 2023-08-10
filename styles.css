@@ -68,9 +68,16 @@ main {
 }
 
 /* Contact Me */
-.contact-me {
-  margin-top: 150px;
+.contact-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20;
+  color: white
 }
+
+/* .contact-me {
+  margin-top: 150px;
+} */
 
 .contact-me-footer,
 .contact-email {
@@ -80,7 +87,23 @@ main {
   font-size: 14px;
   font-weight: bold;
   color: white;
+  margin-bottom: 5px;
 }
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .contact-info {
+    position: relative;
+    bottom: initial;
+    left: initial;
+    text-align: center;
+  }
+  
+  .contact-me-footer,
+  .contact-email {
+    margin-bottom: 10px;
+  }
+}
+
 
 /* Social Icons */
 .social {
@@ -136,3 +159,4 @@ i {
 i:hover {
   transform: rotate(20deg) scale(1.2);
 }
+
