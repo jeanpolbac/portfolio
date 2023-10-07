@@ -1,0 +1,38 @@
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <a class="brand" routerLink="/" routerLinkActive="active">Jean-Pol Bacquet</a>
+    <div class="nav-links">
+      <a routerLink="/" routerLinkActive="active">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/projects" routerLinkActive="active">Projects</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content Area -->
+<main class="container">
+  <router-outlet></router-outlet>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>© 2023 Jean-Pol Bacquet. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://github.com/jeanpolbac" target="_blank" rel="noopener noreferrer">
+        <span class="icon-wrapper">
+          <i class="fa fa-github fa-2x icon-white"></i>
+        </span>
+      </a>
+      <a href="https://linkedin.com/in/jpbacquet" target="_blank" rel="noopener noreferrer">
+        <span class="icon-wrapper">
+          <i class="fa fa-linkedin fa-2x icon-white"></i>
+        </span>
+      </a>
+      <!-- Add other social media links as needed -->
+    </div>
+    
+  </div>
+</footer>

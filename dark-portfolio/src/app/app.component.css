@@ -1,0 +1,78 @@
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+/* Global Styles */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Navbar Styles */
+.navbar {
+    background-color: #202040;  /* Pink from pink-bluegrey theme */
+  padding: 0.5rem 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .brand {
+  font-size: 1.5em;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover, .navbar a.router-link-active {
+    background-color: #202040;  /* A slightly darker pink for hover effect */
+  color: white;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #607D8B;  /* Blue Grey from pink-bluegrey theme */
+  color: white;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.icon-white {
+    color: white;
+    margin-right: 15px; /* Space between icons */
+    transition: transform 0.3s; /* Smooth transition for the zoom */
+  }
+  
+  .icon-white:last-child {
+    margin-right: 0; /* Ensures the last icon doesn't have extra space on the right */
+  }
+  
+  .icon-white:hover {
+    transform: scale(1.2); /* 20% zoom on hover */
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+  }
+  
+  .social-icons a:last-child {
+    margin-right: 0; 
+  }
+  
+
+/* Main Content Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
