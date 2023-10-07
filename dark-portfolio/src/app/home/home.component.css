@@ -1,0 +1,15 @@
+/* Main Content Styles */
+.intro {
+    padding: 200px 0;
+    text-align: center;
+    background-color: #181818;
+    color: #E0E0E0;
+  }
+  .intro .name {
+    color: #40E0D0;
+  }
+  .bio {
+    color: #E0E0E0;
+    max-width: 700px;
+    margin: 20px auto;
+  }
