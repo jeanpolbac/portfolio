@@ -21,19 +21,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 .navbar .nav-links {
   display: flex;
   gap: 15px;
+  
 }
+
 
 .navbar a {
   color: #181818;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for the zoom */
 }
 
 .navbar a:hover, .navbar a.router-link-active {
     background-color: #20b3a4;
   color: #181818;
+  transform: scale(1.2); /* 20% zoom on hover */
 }
 
 
