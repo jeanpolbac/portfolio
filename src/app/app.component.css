@@ -82,3 +82,17 @@ footer {
   margin: 0 auto;
   padding: 1rem;
 }
+
+/* Mobile Styles */
+.navbar .nav-links {
+  display: block; 
+  gap: 5px;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) { 
+  .navbar .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+}
