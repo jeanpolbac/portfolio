@@ -1,98 +1,102 @@
+/* Imports */
 @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
 
 /* Global Styles */
-html, body { height: 100%;  }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #181818; }
+html, body { 
+    height: 100%;  
+}
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: #181818; 
+}
 
 /* Navbar Styles */
+/* Base Styles */
 .navbar {
     background-color: #40E0D0;
-  padding: 0.5rem 1rem;
-  color:#181818;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 0.5rem 1rem;
+    color: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* Branding */
 .navbar .brand {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
+/* Navigation Links */
 .navbar .nav-links {
-  display: flex;
-  gap: 15px;
-  
+    display: flex;
+    gap: 15px;
 }
-
-
 .navbar a {
-  color: #181818;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for the zoom */
+    color: #181818;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for the zoom */
 }
-
 .navbar a:hover, .navbar a.router-link-active {
     background-color: #20b3a4;
-  color: #181818;
-  transform: scale(1.2); /* 20% zoom on hover */
+    color: #181818;
+    transform: scale(1.2); /* 20% zoom on hover */
 }
 
-
+/* Main Content Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
 /* Footer Styles */
 footer {
     background-color: #40E0D0; 
-  color: #181818;
-  padding: 1rem 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+    color: #181818;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
 }
 
+/* Social Icons */
 .icon-white {
     color: #181818;
-    margin-right: 15px; /* Space between icons */
-    transition: transform 0.3s; /* Smooth transition for the zoom */
-  }
-  
-  .icon-white:last-child {
-    margin-right: 0; /* Ensures the last icon doesn't have extra space on the right */
-  }
-  
-  .icon-white:hover {
-    transform: scale(1.2); /* 20% zoom on hover */
-  }
-  
-  .social-icons a {
-    margin-right: 15px;
-  }
-  
-  .social-icons a:last-child {
+    margin-right: 15px; 
+    transition: transform 0.3s; 
+}
+.icon-white:last-child {
     margin-right: 0; 
-  }
-  
-
-/* Main Content Styles */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+}
+.icon-white:hover {
+    transform: scale(1.2);
+}
+.social-icons a {
+    margin-right: 15px;
+}
+.social-icons a:last-child {
+    margin-right: 0; 
 }
 
+/* Media Queries */
 /* Mobile Styles */
 .navbar .nav-links {
-  display: block; 
-  gap: 5px;
+    display: block; 
+    gap: 5px;
 }
 
 /* Desktop Styles */
 @media (min-width: 768px) { 
-  .navbar .nav-links {
-    display: flex;
-    gap: 15px;
-  }
+    .navbar .nav-links {
+        display: flex;
+        gap: 15px;
+    }
 }
