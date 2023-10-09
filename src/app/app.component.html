@@ -13,9 +13,9 @@
 
 <!-- Main Content Area -->
 <main class="container">
-  <div [@slideAnimation]="o.isActivated ? o.activatedRoute : ''">
+  <div [@slideAnimation]="o.isActivated ? o.activatedRoute.snapshot.data['routeName'] : ''">
     <router-outlet #o="outlet"></router-outlet>
-  </div>
+ </div>
 </main>
 
 <!-- Footer -->
