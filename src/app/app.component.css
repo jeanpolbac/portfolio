@@ -57,8 +57,9 @@ html, body {
     margin: 0 auto; /* Centering the container */
     padding: 1rem;
     flex: 1 0 auto; /* This makes main content grow, pushing footer to the bottom */
-
 }
+
+
 
 /* Footer Styles */
 footer {
