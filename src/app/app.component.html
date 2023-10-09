@@ -12,11 +12,11 @@
 </nav>
 
 <!-- Main Content Area -->
-<body>
 <main class="container">
-  <router-outlet></router-outlet>
+  <div [@slideAnimation]="o.isActivated ? o.activatedRoute : ''">
+    <router-outlet #o="outlet"></router-outlet>
+  </div>
 </main>
-</body>
 
 <!-- Footer -->
 <footer>

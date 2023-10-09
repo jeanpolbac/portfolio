@@ -11,6 +11,13 @@ import { ContactComponent } from './contact/contact.component';
 import { MaterialModule } from './material.module/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+
+
+
+
 
 
 @NgModule({
@@ -27,7 +34,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

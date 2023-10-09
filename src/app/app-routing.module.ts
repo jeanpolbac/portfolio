@@ -12,11 +12,12 @@ import { ContactComponent } from './contact/contact.component';
 
 // Define your routes
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: '', component: HomeComponent, data: { routeName: 'Home' } },
+  { path: 'about', component: AboutComponent, data: { routeName: 'About' } },
+  { path: 'projects', component: ProjectsComponent, data: { routeName: 'Projects' } },
+  { path: 'contact', component: ContactComponent, data: { routeName: 'Contact' } }
 ];
+
 
 @NgModule({
   declarations: [],

@@ -1,1 +1,21 @@
-<p>contact works!</p>
+<div class="contact-form-container">
+    <h2>Contact Me</h2>
+    <form action="your_server_endpoint" method="post">
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput type="text" id="name" name="name" required>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" id="email" name="email" required>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Message</mat-label>
+            <textarea matInput matTextareaAutosize matAutosizeMinRows="4" matAutosizeMaxRows="8" id="message" name="message" required></textarea>
+        </mat-form-field>
+        
+        <button mat-raised-button type="submit" class="submit-btn">Send</button>
+    </form>
+</div>
