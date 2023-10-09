@@ -13,7 +13,9 @@
 
 <!-- Main Content Area -->
 <main class="container">
-  <div [@slideAnimation]="o.isActivated ? o.activatedRoute.snapshot.data['routeName'] : ''">
+  <!-- <div [@slideAnimation]="o.isActivated ? o.activatedRoute.snapshot.data['routeName'] : ''"> -->
+    <div [@slideAnimation]="getRouteAnimation(o)">
+
     <router-outlet #o="outlet"></router-outlet>
  </div>
 </main>

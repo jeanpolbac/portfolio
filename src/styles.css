@@ -1,17 +1,121 @@
-@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+/* @import "~@angular/material/prebuilt-themes/pink-bluegrey.css"; */
 
-/* You can add global styles to this file, and also import other style files */
 
-html, body { 
-  height: 100%; 
+/* Global Styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+  font-family: 'Montserrat', "Helvetica Neue", sans-serif;
+  background-color: #181818;
 }
 
-html {
-  scroll-behavior: smooth;
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(14px, 2vw, 24px);
 }
 
-body { 
-  margin: 0; 
-  font-family: Roboto, "Helvetica Neue", sans-serif; 
-  background-color: #181818; 
+h1 {
+  font-size: clamp(24px, 4vw, 40px);
+}
+
+h2 {
+  font-size: clamp(20px, 3.5vw, 35px);
+}
+
+/* Navbar Styles */
+
+/* Base Styles */
+.navbar {
+  background-color: #40e0d0;
+  padding: 0.5rem 1rem;
+  color: #181818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top of the page */
+  width: 100%; /* Ensure it spans the entire width of the screen */
+  z-index: 1000; /* Ensures it stays above other elements */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+/* Styling for brand logo/text in Navbar */
+.navbar .brand {
+  font-size: 1.5em;
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+  display: flex;
+  gap: 15px;
+}
+.navbar a {
+  color: #181818;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1.2em;  /* <-- Added this line to increase font size */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for the zoom */
+}
+.navbar a:hover,
+.navbar a.router-link-active {
+  background-color: #20b3a4;
+  color: #181818;
+  transform: scale(1.2); /* 20% zoom on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #40e0d0;
+  color: #181818;
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+  position: fixed; /* Make the footer fixed */
+  bottom: 0; /* Position it at the bottom of the page */
+  width: 100%; /* Ensure it spans the entire width of the screen */
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Styles for social media icons in the footer */
+.icon-white {
+  color: #181818;
+  margin-right: 15px; /* Spacing between icons */
+  transition: transform 0.3s; /* Transition for hover effect */
+}
+.icon-white:last-child {
+  margin-right: 0; /* Remove margin for the last icon */
+}
+.icon-white:hover {
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+.social-icons a {
+  margin-right: 15px; /* Spacing between social icons */
+}
+.social-icons a:last-child {
+  margin-right: 0; /* Remove margin for the last icon */
+}
+
+/* Media Queries */
+
+/* Mobile Styles */
+.navbar .nav-links {
+  display: block; /* Stack navigation links vertically for mobile */
+  gap: 5px;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .navbar .nav-links {
+    display: flex;
+    gap: 15px;
+  }
 }

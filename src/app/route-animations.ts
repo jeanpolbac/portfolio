@@ -20,8 +20,11 @@ export const slideAnimation = trigger('slideAnimation', [
       query(
         ':enter',
         [
-          style({ transform: 'translateX(-100%)' }),
-          animate('1.0s ease-in-out', style({ transform: 'translateX(0%)' })),
+          style({ transform: 'translateX(-100%)', opacity: 0 }), // Initial position and opacity
+          animate(
+            '1.0s ease-in-out',
+            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
+          ),
         ],
         { optional: true }
       ),
@@ -38,8 +41,11 @@ export const slideAnimation = trigger('slideAnimation', [
       query(
         ':enter',
         [
-          style({ transform: 'translateX(-100%)' }),
-          animate('1.0s ease-in-out', style({ transform: 'translateX(0%)' })),
+          style({ transform: 'translateX(-100%)', opacity: 0 }),
+          animate(
+            '1.0s ease-in-out',
+            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
+          ),
         ],
         { optional: true }
       ),
@@ -56,8 +62,11 @@ export const slideAnimation = trigger('slideAnimation', [
       query(
         ':enter',
         [
-          style({ transform: 'translateX(-100%)' }),
-          animate('1.0s ease-in-out', style({ transform: 'translateX(0%)' })),
+          style({ transform: 'translateX(-100%)', opacity: 0 }),
+          animate(
+            '1.0s ease-in-out',
+            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
+          ),
         ],
         { optional: true }
       ),
@@ -74,8 +83,11 @@ export const slideAnimation = trigger('slideAnimation', [
       query(
         ':enter',
         [
-          style({ transform: 'translateX(100%)' }),
-          animate('1.0s ease-in-out', style({ transform: 'translateX(0%)' })),
+          style({ transform: 'translateX(-100%)', opacity: 0 }),
+          animate(
+            '1.0s ease-in-out',
+            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
+          ),
         ],
         { optional: true }
       ),
@@ -92,8 +104,11 @@ export const slideAnimation = trigger('slideAnimation', [
       query(
         ':enter',
         [
-          style({ transform: 'translateX(-100%)' }),
-          animate('1.0s ease-in-out', style({ transform: 'translateX(0%)' })),
+          style({ transform: 'translateX(-100%)', opacity: 0 }),
+          animate(
+            '1.0s ease-in-out',
+            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
+          ),
         ],
         { optional: true }
       ),
@@ -110,8 +125,11 @@ export const slideAnimation = trigger('slideAnimation', [
       query(
         ':enter',
         [
-          style({ transform: 'translateX(-100%)' }),
-          animate('1.0s ease-in-out', style({ transform: 'translateX(0%)' })),
+          style({ transform: 'translateX(-100%)', opacity: 0 }),
+          animate(
+            '1.0s ease-in-out',
+            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
+          ),
         ],
         { optional: true }
       ),
@@ -128,8 +146,11 @@ export const slideAnimation = trigger('slideAnimation', [
       query(
         ':enter',
         [
-          style({ transform: 'translateX(100%)' }),
-          animate('1.0s ease-in-out', style({ transform: 'translateX(0%)' })),
+          style({ transform: 'translateX(-100%)', opacity: 0 }),
+          animate(
+            '1.0s ease-in-out',
+            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
+          ),
         ],
         { optional: true }
       ),
@@ -146,8 +167,11 @@ export const slideAnimation = trigger('slideAnimation', [
       query(
         ':enter',
         [
-          style({ transform: 'translateX(100%)' }),
-          animate('1.0s ease-in-out', style({ transform: 'translateX(0%)' })),
+          style({ transform: 'translateX(-100%)', opacity: 0 }),
+          animate(
+            '1.0s ease-in-out',
+            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
+          ),
         ],
         { optional: true }
       ),
@@ -164,8 +188,11 @@ export const slideAnimation = trigger('slideAnimation', [
       query(
         ':enter',
         [
-          style({ transform: 'translateX(-100%)' }),
-          animate('1.0s ease-in-out', style({ transform: 'translateX(0%)' })),
+          style({ transform: 'translateX(-100%)', opacity: 0 }),
+          animate(
+            '1.0s ease-in-out',
+            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
+          ),
         ],
         { optional: true }
       ),
@@ -182,8 +209,11 @@ export const slideAnimation = trigger('slideAnimation', [
       query(
         ':enter',
         [
-          style({ transform: 'translateX(100%)' }),
-          animate('1.0s ease-in-out', style({ transform: 'translateX(0%)' })),
+          style({ transform: 'translateX(-100%)', opacity: 0 }),
+          animate(
+            '1.0s ease-in-out',
+            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
+          ),
         ],
         { optional: true }
       ),

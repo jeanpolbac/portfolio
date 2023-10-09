@@ -1,129 +1,15 @@
-/* Imports */
-@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
-
-/* Global Styles */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #181818;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-
-/* Navbar Styles */
-
-/* Base Styles */
-.navbar {
-    background-color: #40E0D0;
-    padding: 0.5rem 1rem;
-    color: #181818;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed; /* Make the navbar fixed */
-    top: 0; /* Position it at the top of the page */
-    width: 100%; /* Ensure it spans the entire width of the screen */
-    z-index: 1000; /* Ensures it stays above other elements */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-}
-
-/* Styling for brand logo/text in Navbar */
-.navbar .brand {
-    font-size: 1.5em;
-}
-
-/* Navigation Links */
-.navbar .nav-links {
-    display: flex;
-    gap: 15px;
-}
-.navbar a {
-    color: #181818;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for the zoom */
-}
-.navbar a:hover, .navbar a.router-link-active {
-    background-color: #20b3a4;
-    color: #181818;
-    transform: scale(1.2); /* 20% zoom on hover */
-}
-
 /* Main Content Styles */
 main.container {
-     /* Positioning & Layout */
-     flex: 1 0 auto;
+  /* Positioning & Layout */
+  flex: 1 0 auto;
 
-     /* Display & Box Model */
-     display: flex;
-     flex-direction: column;
-     justify-content: center; /* vertically centers the content */
-     align-items: center; /* horizontally centers the content */
-     height: calc(100vh - 75px - 94px);
-     max-width: 1200px; /* Maximum width */
-     margin: 0 auto; /* Centering the container */
-     padding: 1rem;
-}
-
-
-
-
-
-/* Footer Styles */
-footer {
-  background-color: #40E0D0;
-  color: #181818;
-  padding: 1rem 0;
-  text-align: center;
+  /* Display & Box Model */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0; /* Prevent footer from shrinking */
-  position: fixed; /* Make the footer fixed */
-  bottom: 0; /* Position it at the bottom of the page */
-  width: 100%; /* Ensure it spans the entire width of the screen */
-  z-index: 1000; /* Ensures it stays above other elements */
-}
-
-/* Styles for social media icons in the footer */
-.icon-white {
-    color: #181818;
-    margin-right: 15px; /* Spacing between icons */
-    transition: transform 0.3s; /* Transition for hover effect */
-}
-.icon-white:last-child {
-    margin-right: 0; /* Remove margin for the last icon */
-}
-.icon-white:hover {
-    transform: scale(1.2); /* Zoom effect on hover */
-}
-.social-icons a {
-    margin-right: 15px; /* Spacing between social icons */
-}
-.social-icons a:last-child {
-    margin-right: 0; /* Remove margin for the last icon */
-}
-
-/* Media Queries */
-
-/* Mobile Styles */
-.navbar .nav-links {
-    display: block; /* Stack navigation links vertically for mobile */
-    gap: 5px;
-}
-
-/* Desktop Styles */
-@media (min-width: 768px) { 
-    .navbar .nav-links {
-        display: flex;
-        gap: 15px;
-    }
+  justify-content: center; /* vertically centers the content */
+  align-items: center; /* horizontally centers the content */
+  height: calc(100vh - 75px - 94px);
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; /* Centering the container */
+  padding: 1rem;
 }

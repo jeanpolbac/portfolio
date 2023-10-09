@@ -10,4 +10,7 @@ import { slideAnimation } from './route-animations';
 })
 export class AppComponent {
   title = 'dark-portfolio';
+  getRouteAnimation(outlet: any) {
+    return outlet.activatedRouteData['routeName'] || 'defaultRoute';
+}
 }
