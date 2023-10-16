@@ -18,16 +18,16 @@ body {
 
 /* For Bootstrap's Navbar */
 .navbar .navbar-nav .nav-link {
-  color: #17a2b8; 
+  color: #17a2b8;
   font-size: 1.1rem;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .content {
-  flex: 1 0 auto; 
+  flex: 1 0 auto;
 }
 
 #me {
@@ -35,10 +35,8 @@ body {
   border: 3px solid #17a2b8;
 }
 
-
-
-
-h1, h2 {
+h1,
+h2 {
   font-weight: lighter;
 }
 
@@ -80,14 +78,11 @@ a {
 
 
 
-/* Additional styles for the About page */
-
 /* Style the bio paragraph */
 .bio {
   font-size: 1.2rem;
   line-height: 1.5;
   color: #a8a8a8;
   margin: 20px;
-  text-align: justify; /* Justify the text */
-
+  text-align: justify;
 }
