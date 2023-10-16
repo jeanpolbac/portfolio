@@ -1,162 +1,42 @@
-/* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,400,700");
-
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Base Styles */
-html {
-  font-size: 100%;
-  font-family: "Raleway", sans-serif;
-  background-color: dimgray;
-}
-
-body {
-  font-family: "Raleway", sans-serif;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: lavender;
-  min-height: 100vh;
-}
-
-/* Header and Navigation Bar */
-/* Navbar Styling */
-.navbar {
-  position: fixed; /* Make the navbar fixed */
-  top: 0; /* Stick it to the top */
-  left: 0; /* Stick it to the left */
-  width: 100%; /* Make it full width */
-  background-color: dimgray;
-  color: white;
-  padding: 10px 20px; /* Add padding as needed */
-  z-index: 1000; /* Adjust the z-index as needed */
-}
-
-.navbar-custom {
-  background-color: dimgray;
-}
-.nav-collapse .li{
-  list-style-type: none;
-}
-.navbar a {
-  color: inherit;
-  text-decoration: none;
-}
-.navbar a:hover,
-.navbar a:active {
-  color: inherit;
-}
-
-/* Main Content */
-main {
-  align-content: center;
-}
-
-/* About Me Image */
 #me {
-  width: 140px;
-  height: auto;
-  border-radius: 15%;
+  width: 150px;
+  border: 3px solid #17a2b8;  /* Bootstrap info color for the border */
 }
 
-/* Contact Me */
-.contact-info {
-  position: absolute;
-  bottom: 20px;
-  left: 20;
-  color: white
+h1, h2 {
+  font-weight: lighter;
 }
 
-/* .contact-me {
-  margin-top: 150px;
-} */
-
-.contact-me-footer,
-.contact-email {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 5px;
-}
-/* Media Query for Mobile Devices */
-@media (max-width: 767px) {
-  .contact-info {
-    position: relative;
-    bottom: initial;
-    left: initial;
-    text-align: center;
-  }
-  
-  .contact-me-footer,
-  .contact-email {
-    margin-bottom: 10px;
-  }
+.container {
+  max-width: 900px;
 }
 
-
-/* Social Icons */
-.social {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-.social a {
-  margin: 0;
-}
-.social a i {
-  font-size: 0.5 rem;
-}
-.icons-fixed-bottom-right {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
-
-/* Headings */
 h1 {
-  font-size: 2.2rem;
-  font-weight: normal;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-top: 20px;
 }
+
 h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-h4 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  margin-top: 10px;
+  color: #a8a8a8;
 }
 
-/* Paragraphs */
-p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+a {
+  text-decoration: none; 
 }
 
-/* Animation */
-i {
-  letter-spacing: 30px;
-  transition: all 0.5s ease-out;
-}
-i:hover {
-  transform: rotate(20deg) scale(1.2);
+
+.footer {
+  margin-top: 50px;
 }
 
+.social i {
+  font-size: 24px;
+  transition: color 0.3s;
+  color: #17a2b8;
+}
+
+.social i:hover {
+  color: #ffffff;
+}

@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jean-Pol Bacquet</title>
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/68a9301a92.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<!-- Header with Sticky Navigation Bar -->
-<header>
-  <nav class="navbar sticky-top navbar-dark bg-dark">
-    <div class="container-fluid">
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <!-- Add more navigation items here -->
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jean-Pol Bacquet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/68a9301a92.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"></a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="text-center">
+        <img
+          src="img/aboutme.jpg"
+          id="me"
+          alt="Jean-Pol Bacquet"
+          class="rounded-circle"
+        />
+        <h1 class="mt-3">Jean-Pol Bacquet</h1>
+        <h2>Fullstack Developer</h2>
       </div>
     </div>
-  </nav>
-</header>
 
-  <!-- Main Content -->
-  <main>
-    <div class="container text-center">
-      <img src="img/aboutme.jpg" alt="picture of author" id="me" class="img-fluid rounded-circle mt-4">
-      <h1>Jean-Pol Bacquet</h1>
-      <h2>Fullstack Developer</h2>
-    </div>
-  </main>
-
- <!-- Footer -->
- <footer class="footer fixed-bottom bg-dark text-light text-center py-2">
-  <div class="container">
-    <!-- &copy; 2023 Jean-Pol Bacquet -->
-    <div class="contact-info">
-      <div class="contact-me-footer">
-        Email Me: contactme@jpbacquet.com
+    <footer class="mt-5">
+      <div class="container text-center">
+        <div class="social mt-3">
+          <a href="mailto:contactme@jpbacquet.com" class="mx-2">
+            <i class="fa-sharp fa-regular fa-at"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jpbacquet/"
+            target="_blank"
+            class="mx-2 text-info"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/jeanpolbac"
+            target="_blank"
+            class="mx-2 text-info"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="copy-right mt-3">
+          <p>&copy; 2023 Jean-Pol Bacquet. All rights reserved.</p>
+        </div>
       </div>
-    </div>
-    <!-- Social Icons at Bottom Right -->
-    <div class="social icons-fixed-bottom-right">
-      <a href="https://github.com/jeanpolbac" target="_blank">
-        <i class="fa-brands fa-github fa-x" style="color: #e6e6fa"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/jpbacquet/" target="_blank">
-        <i class="fa-brands fa-linkedin-in fa-x" style="color: #e6e6fa"></i>
-      </a>
-    </div>
-  </div>
-</footer>
-
-<!-- ... (scripts and closing tags) ... -->
-</body>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
