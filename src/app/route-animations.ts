@@ -4,219 +4,43 @@ import {
   style,
   query,
   group,
-  animateChild,
   animate,
-  keyframes,
+
 } from '@angular/animations';
 
 export const slideAnimation = trigger('slideAnimation', [
   // Transitioning *to* Home from About
-  transition('About => Home', [
-    query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-      optional: true,
-    }),
+  transition('* => *', [
+    query(':enter, :leave', 
+    style({ 
+      position: 'fixed', 
+      top: '50%',       // <-- Keep this for vertical centering
+      width: '100%', 
+      transform: 'translateX(-100%) translateY(-50%)', // <-- This keeps it at the left, but centered vertically
+      opacity: 0 
+    }), 
+    { optional: true }
+  ),
 
-    group([
-      query(
-        ':enter',
-        [
-          style({ transform: 'translateX(-100%)', opacity: 0 }), // Initial position and opacity
-          animate(
-            '1.0s ease-in-out',
-            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
-          ),
-        ],
-        { optional: true }
-      ),
-    ]),
-  ]),
+  group([
+    query(':enter', [
+      animate('500ms ease-in-out', 
+        style({ 
+          transform: 'translateX(0%) translateY(-50%)',  // <-- This will slide it to the center horizontally but keep it vertically centered
+          opacity: 1 
+        })
+      )
+    ], { optional: true }),
 
-  // Transitioning *to* Home from Projects
-  transition('Projects => Home', [
-    query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-      optional: true,
-    }),
-
-    group([
-      query(
-        ':enter',
-        [
-          style({ transform: 'translateX(-100%)', opacity: 0 }),
-          animate(
-            '1.0s ease-in-out',
-            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
-          ),
-        ],
-        { optional: true }
-      ),
-    ]),
-  ]),
-
-  // Transitioning *to* Home from Contact
-  transition('Contact => Home', [
-    query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-      optional: true,
-    }),
-
-    group([
-      query(
-        ':enter',
-        [
-          style({ transform: 'translateX(-100%)', opacity: 0 }),
-          animate(
-            '1.0s ease-in-out',
-            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
-          ),
-        ],
-        { optional: true }
-      ),
-    ]),
-  ]),
-
-  // Transitioning *to* About from Home
-  transition('Home => About', [
-    query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-      optional: true,
-    }),
-
-    group([
-      query(
-        ':enter',
-        [
-          style({ transform: 'translateX(-100%)', opacity: 0 }),
-          animate(
-            '1.0s ease-in-out',
-            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
-          ),
-        ],
-        { optional: true }
-      ),
-    ]),
-  ]),
-
-  // Transitioning *to* About from Projects
-  transition('Projects => About', [
-    query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-      optional: true,
-    }),
-
-    group([
-      query(
-        ':enter',
-        [
-          style({ transform: 'translateX(-100%)', opacity: 0 }),
-          animate(
-            '1.0s ease-in-out',
-            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
-          ),
-        ],
-        { optional: true }
-      ),
-    ]),
-  ]),
-
-  // Transitioning *to* About from Contact
-  transition('Contact => About', [
-    query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-      optional: true,
-    }),
-
-    group([
-      query(
-        ':enter',
-        [
-          style({ transform: 'translateX(-100%)', opacity: 0 }),
-          animate(
-            '1.0s ease-in-out',
-            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
-          ),
-        ],
-        { optional: true }
-      ),
-    ]),
-  ]),
-
-  // Transitioning *to* Projects from Home
-  transition('Home => Projects', [
-    query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-      optional: true,
-    }),
-
-    group([
-      query(
-        ':enter',
-        [
-          style({ transform: 'translateX(-100%)', opacity: 0 }),
-          animate(
-            '1.0s ease-in-out',
-            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
-          ),
-        ],
-        { optional: true }
-      ),
-    ]),
-  ]),
-
-  // Transitioning *to* Projects from About
-  transition('About => Projects', [
-    query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-      optional: true,
-    }),
-
-    group([
-      query(
-        ':enter',
-        [
-          style({ transform: 'translateX(-100%)', opacity: 0 }),
-          animate(
-            '1.0s ease-in-out',
-            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
-          ),
-        ],
-        { optional: true }
-      ),
-    ]),
-  ]),
-
-  // Transitioning *to* Projects from Contact
-  transition('Contact => Projects', [
-    query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-      optional: true,
-    }),
-
-    group([
-      query(
-        ':enter',
-        [
-          style({ transform: 'translateX(-100%)', opacity: 0 }),
-          animate(
-            '1.0s ease-in-out',
-            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
-          ),
-        ],
-        { optional: true }
-      ),
-    ]),
-  ]),
-
-  // Transitioning *to* Contact from any route
-  transition('* => Contact', [
-    query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-      optional: true,
-    }),
-
-    group([
-      query(
-        ':enter',
-        [
-          style({ transform: 'translateX(-100%)', opacity: 0 }),
-          animate(
-            '1.0s ease-in-out',
-            style({ transform: 'translateX(0%)', opacity: 1 }) // Final position and opacity
-          ),
-        ],
-        { optional: true }
-      ),
-    ]),
-  ]),
+    query(':leave', [
+      animate('500ms ease-in-out', 
+        style({ 
+          transform: 'translateX(100%) translateY(-50%)',  // <-- This will slide it out to the right but keep it vertically centered
+          opacity: 0 
+        })
+      )
+    ], { optional: true })
+  ])
+])
 ]);
+

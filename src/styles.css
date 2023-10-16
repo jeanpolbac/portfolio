@@ -27,6 +27,17 @@ h2 {
   font-size: clamp(20px, 3.5vw, 35px);
 }
 
+p {
+  font-size: 16px; /* Adjust as necessary */
+  line-height: 1.5;
+  font-weight: 400; /* Adjust based on available weights for your font */
+  color: #f2f2f2; /* Slightly off-white for a softer look */
+  max-width: 800px; /* Adjust based on your design's requirements */
+  margin: 0 auto; /* Centers the text if it's less than the max-width */
+  padding: 20px; /* Adjust for desired spacing */
+}
+
+
 /* Navbar Styles */
 
 /* Base Styles */
@@ -49,6 +60,26 @@ h2 {
   font-size: 1.5em;
 }
 
+.logo-container {
+  width: 500px; /* set to the width of the region you want to display */
+  height: 50px; /* set to the height of the region you want to display */
+  overflow: hidden;
+  position: relative;  /* Added relative positioning to the container */
+
+}
+
+.logo-container img {  /* Adjusted the selector */
+  width: 100%; /* Ensures the image stretches or shrinks to fit the container */
+  position: absolute;  /* Use absolute positioning within the relatively positioned container */
+  left: 0;
+  top: -50px;
+}
+
+.navbar-logo img {
+  height: 40px; /* Adjust this value as needed */
+  width: auto;
+}
+
 /* Navigation Links */
 .navbar .nav-links {
   display: flex;
@@ -62,11 +93,13 @@ h2 {
   font-size: 1.2em;  /* <-- Added this line to increase font size */
   transition: background-color 0.3s, transform 0.3s; /* Smooth transition for the zoom */
 }
+
+
 .navbar a:hover,
 .navbar a.router-link-active {
   background-color: #20b3a4;
   color: #181818;
-  transform: scale(1.2); /* 20% zoom on hover */
+  transform: scale(1.1); /* 20% zoom on hover */
 }
 
 /* Footer Styles */
@@ -84,6 +117,16 @@ footer {
   bottom: 0; /* Position it at the bottom of the page */
   width: 100%; /* Ensure it spans the entire width of the screen */
   z-index: 1001; /* Ensures it stays above other elements */
+}
+
+.footer {
+  font-size: initial;
+  line-height: initial;
+  font-weight: initial;
+  color: initial;
+  max-width: initial;
+  margin: initial;
+  padding: initial;
 }
 
 /* Styles for social media icons in the footer */
