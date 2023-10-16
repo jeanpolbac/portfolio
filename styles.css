@@ -1,7 +1,42 @@
-#me {
-  width: 150px;
-  border: 3px solid #17a2b8;  /* Bootstrap info color for the border */
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Base Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: dimgray;
+}
+
+/* For Bootstrap's Navbar */
+.navbar .navbar-nav .nav-link {
+  color: #17a2b8; 
+  font-size: 1.1rem;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffffff; 
+}
+
+.content {
+  flex: 1 0 auto; 
+}
+
+#me {
+  width: 220px;
+  border: 3px solid #17a2b8;
+}
+
+
+
 
 h1, h2 {
   font-weight: lighter;
@@ -22,21 +57,37 @@ h2 {
   color: #a8a8a8;
 }
 
+p,
 a {
-  text-decoration: none; 
+  font-size: 1em;
+  text-decoration: none;
 }
-
 
 .footer {
   margin-top: 50px;
+  flex-shrink: 0;
 }
 
 .social i {
-  font-size: 24px;
+  font-size: 1.5em;
   transition: color 0.3s;
   color: #17a2b8;
 }
 
 .social i:hover {
   color: #ffffff;
+}
+
+
+
+/* Additional styles for the About page */
+
+/* Style the bio paragraph */
+.bio {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #a8a8a8;
+  margin: 20px;
+  text-align: justify; /* Justify the text */
+
 }
